@@ -27,15 +27,15 @@ a:focus-visible, button:focus-visible { outline: 1px solid #596349; outline-offs
 }
 
 .name { display: inline-block; }
-h1 { font-size: 30px; font-weight: 500; letter-spacing: -1.5px; line-height: 1; margin: 0; }
-.identity p { margin: 22px 0 0; font-size: 11px; line-height: 1.9; color: var(--muted); }
+h1 { font-size: 34px; font-weight: 500; letter-spacing: -1.5px; line-height: 1; margin: 0; }
+.identity p { margin: 22px 0 0; font-size: 14px; line-height: 1.8; color: var(--muted); }
 nav { display: flex; flex-direction: column; gap: 21px; margin-top: 65px; }
-nav a { display: flex; align-items: center; font-size: 11px; gap: 10px; }
+nav a { display: flex; align-items: center; font-size: 14px; gap: 10px; }
 nav a:last-child { color: var(--muted); padding-left: 15px; }
 nav a:last-child span { font-size: 13px; }
 .nav-dot { width: 5px; height: 5px; border-radius: 50%; background: #687053; }
-.count { margin-left: auto; font-size: 9px; color: var(--muted); }
-.rail-note { margin-top: auto; display: flex; justify-content: space-between; color: var(--muted); font-size: 9px; }
+.count { margin-left: auto; font-size: 11px; color: var(--muted); }
+.rail-note { margin-top: auto; display: flex; justify-content: space-between; color: var(--muted); font-size: 11px; }
 
 main { margin-left: 260px; padding: 54px 48px 0 25px; max-width: 1600px; }
 .book-heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 25px; font-size: 10px; }
@@ -75,10 +75,10 @@ body:has(.lightbox[open]) { overflow: hidden; }
 
 @media (max-width: 640px) {
   .rail { position: static; width: auto; padding: 30px 22px 27px; flex-direction: row; align-items: flex-start; justify-content: space-between; }
-  h1 { font-size: 29px; }
-  .identity p { font-size: 10px; margin-top: 15px; }
+  h1 { font-size: 32px; }
+  .identity p { font-size: 12px; margin-top: 15px; }
   nav { margin-top: 4px; gap: 18px; min-width: 90px; }
-  nav a { font-size: 10px; }
+  nav a { font-size: 12px; }
   .count { display: none; }
   .rail-note { display: none; }
   main { margin: 0; padding: 10px 22px 0; }
