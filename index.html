@@ -3,52 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f4f1ea" />
-    <meta name="description" content="Antonina, 21. New model based in Montreal. Portfolio and booking information." />
-    <title>Antonina | Montreal Model</title>
+    <meta name="theme-color" content="#faf9f6" />
+    <meta name="description" content="Antonina, 21. New model based in Montreal." />
+    <title>Antonina | Model Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;450;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/style.css" />
     <script type="module" src="/main.js"></script>
   </head>
   <body>
-    <header class="header" id="top">
-      <a class="wordmark" href="#top" aria-label="Antonina home">a.</a>
+    <header class="rail">
+      <div class="identity">
+        <a class="name" href="#portfolio"><h1>Antonina</h1></a>
+        <p>Montreal, Canada<br />21 · New model</p>
+      </div>
       <nav aria-label="Main navigation">
-        <a href="#work">Portfolio</a>
+        <a class="current" href="#portfolio"><span class="nav-dot" aria-hidden="true"></span>Portfolio <span class="count">06</span></a>
+        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
       </nav>
-      <a class="contact-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+      <div class="rail-note"><span>Model book</span><span>2026</span></div>
     </header>
 
-    <main>
-      <section class="intro" aria-labelledby="name">
-        <div class="intro-meta"><span>New model</span><span>Montreal, Canada</span></div>
-        <h1 id="name">ANTONINA<span class="name-period">.</span></h1>
-        <div class="intro-bottom"><p>21 years old</p><a href="#work">View portfolio <span aria-hidden="true">↓</span></a></div>
+    <main id="portfolio">
+      <div class="book-heading"><p>Selected images</p><span>01 — 06</span></div>
+      <section class="book" aria-label="Portfolio photographs">
+        <figure>
+          <button class="photo" data-photo data-title="01 / 06" aria-label="Open photograph 1 of 6"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_13799.jpg" alt="Placeholder: a basset hound with long ears" fetchpriority="high" /></button>
+          <figcaption>01</figcaption>
+        </figure>
+        <figure>
+          <button class="photo monochrome" data-photo data-title="02 / 06" aria-label="Open photograph 2 of 6"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_11281.jpg" alt="Placeholder: a basset hound in natural light" /></button>
+          <figcaption>02</figcaption>
+        </figure>
+        <figure>
+          <button class="photo" data-photo data-title="03 / 06" aria-label="Open photograph 3 of 6"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_10072.jpg" alt="Placeholder: a basset hound looking toward the camera" loading="lazy" /></button>
+          <figcaption>03</figcaption>
+        </figure>
+        <figure>
+          <button class="photo" data-photo data-title="04 / 06" aria-label="Open photograph 4 of 6"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_13439.jpg" alt="Placeholder: a basset hound outdoors" loading="lazy" /></button>
+          <figcaption>04</figcaption>
+        </figure>
+        <figure>
+          <button class="photo monochrome" data-photo data-title="05 / 06" aria-label="Open photograph 5 of 6"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_9960.jpg" alt="Placeholder: a tricolour basset hound" loading="lazy" /></button>
+          <figcaption>05</figcaption>
+        </figure>
+        <figure>
+          <button class="photo" data-photo data-title="06 / 06" aria-label="Open photograph 6 of 6"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_10142.jpg" alt="Placeholder: a basset hound portrait" loading="lazy" /></button>
+          <figcaption>06</figcaption>
+        </figure>
       </section>
-
-      <section class="hero" aria-label="Featured portrait">
-        <button class="photo hero-photo" data-photo data-title="Portrait 01" aria-label="View featured portrait">
-          <img src="https://images.dog.ceo/breeds/hound-basset/n02088238_13799.jpg" alt="A basset hound with long velvety ears and a thoughtful expression" fetchpriority="high" />
-        </button>
-      </section>
-
-      <section class="work section" id="work" aria-labelledby="work-title">
-        <div class="section-heading"><h2 id="work-title">Portfolio<span class="small-period">.</span></h2><p>Placeholder photos until the first shoot.</p></div>
-        <div class="gallery">
-          <article class="work-card" data-category="editorial"><button class="photo" data-photo data-title="Editorial 01" aria-label="View Editorial 01"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_11281.jpg" alt="Basset hound portrait in natural light" loading="lazy" /><span class="image-index">01</span><span class="image-open" aria-hidden="true">↗</span></button><div class="card-caption"><h3>Editorial 01</h3><span>Placeholder</span></div></article>
-          <article class="work-card offset" data-category="portraits"><button class="photo" data-photo data-title="Portrait 02" aria-label="View Portrait 02"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_10072.jpg" alt="An expressive basset hound looking toward the camera" loading="lazy" /><span class="image-index">02</span><span class="image-open" aria-hidden="true">↗</span></button><div class="card-caption"><h3>Portrait 02</h3><span>Placeholder</span></div></article>
-          <article class="work-card" data-category="off-duty"><button class="photo" data-photo data-title="Off duty 03" aria-label="View Off duty 03"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_13439.jpg" alt="Basset hound enjoying an unhurried moment outdoors" loading="lazy" /><span class="image-index">03</span><span class="image-open" aria-hidden="true">↗</span></button><div class="card-caption"><h3>Off duty 03</h3><span>Placeholder</span></div></article>
-          <article class="work-card offset" data-category="editorial"><button class="photo" data-photo data-title="Editorial 04" aria-label="View Editorial 04"><img src="https://images.dog.ceo/breeds/hound-basset/n02088238_9960.jpg" alt="A composed basset hound with a distinctive tricolour coat" loading="lazy" /><span class="image-index">04</span><span class="image-open" aria-hidden="true">↗</span></button><div class="card-caption"><h3>Editorial 04</h3><span>Placeholder</span></div></article>
-        </div>
-      </section>
-
-      <section class="contact section" id="contact" aria-labelledby="contact-title"><div class="contact-title"><h2 id="contact-title">Get in touch.</h2></div><div class="contact-bottom"><span>Contact details coming soon.</span></div></section>
+      <div class="placeholder-note">Basset hounds standing in. Antonina's photos coming soon.</div>
+      <footer id="contact">
+        <div><h2>Contact</h2><p>Booking details coming soon.</p></div>
+        <span>© <span id="year">2026</span></span>
+      </footer>
     </main>
 
-    <footer><a class="wordmark" href="#top" aria-label="Back to top">a.</a><span>© <span id="year">2026</span> Antonina</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
-
-    <dialog class="lightbox" aria-label="Portfolio image viewer"><button class="lightbox-close" aria-label="Close image">Close <span aria-hidden="true">×</span></button><img alt="" /><p></p></dialog>
+    <dialog class="lightbox" aria-label="Portfolio image viewer">
+      <button class="lightbox-close" aria-label="Close image">Close <span aria-hidden="true">×</span></button>
+      <img alt="" />
+      <p></p>
+    </dialog>
   </body>
 </html>
