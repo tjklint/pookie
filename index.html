@@ -26,27 +26,20 @@
     </header>
 
     <main id="portfolio">
-      <div class="book-heading"><p>Selected images</p></div>
-      <section class="carousel" aria-label="Portfolio photographs" aria-roledescription="carousel">
-      <div class="book" id="photo-track" tabindex="0" aria-label="Photographs. Use left and right arrow keys to browse.">
-        <figure role="group" aria-roledescription="slide" aria-label="1 of 4">
+      <div class="book-heading"><p>Selected images</p><span>01 — 04</span></div>
+      <section class="book" aria-label="Portfolio photographs">
+        <figure>
           <button class="photo" data-photo data-title="01 / 04" aria-label="Open photograph 1 of 4"><img src="./photos/10064.jpg" alt="Antonina beside a tree in soft autumn light" fetchpriority="high" /></button>
         </figure>
-        <figure role="group" aria-roledescription="slide" aria-label="2 of 4">
+        <figure>
           <button class="photo" data-photo data-title="02 / 04" aria-label="Open photograph 2 of 4"><img src="./photos/10061.jpg" alt="Antonina in a brown coat beneath golden autumn leaves" /></button>
         </figure>
-        <figure role="group" aria-roledescription="slide" aria-label="3 of 4">
+        <figure>
           <button class="photo" data-photo data-title="03 / 04" aria-label="Open photograph 3 of 4"><img src="./photos/10055.jpg" alt="Antonina seated beneath a tree wearing a brown coat and black jeans" loading="lazy" /></button>
         </figure>
-        <figure role="group" aria-roledescription="slide" aria-label="4 of 4">
+        <figure>
           <button class="photo" data-photo data-title="04 / 04" aria-label="Open photograph 4 of 4"><img src="./photos/10058.jpg" alt="Antonina in a black open-back top, seated by the water" loading="lazy" /></button>
         </figure>
-      </div>
-      <div class="carousel-controls">
-        <button class="previous" aria-label="Previous photograph" aria-controls="photo-track" disabled>←</button>
-        <span class="slide-count" aria-live="polite" aria-atomic="true">01 / 04</span>
-        <button class="next" aria-label="Next photograph" aria-controls="photo-track">→</button>
-      </div>
       </section>
       <footer id="contact">
         <div><h2>Contact</h2><p>Booking details coming soon.</p></div>
@@ -56,8 +49,12 @@
 
     <dialog class="lightbox" aria-label="Portfolio image viewer">
       <button class="lightbox-close" aria-label="Close image">Close <span aria-hidden="true">×</span></button>
-      <img alt="" />
-      <p></p>
+      <img id="viewer-photo" alt="" />
+      <div class="carousel-controls">
+        <button class="previous" aria-label="Previous photograph" aria-controls="viewer-photo">←</button>
+        <span class="slide-count" aria-live="polite" aria-atomic="true">01 / 04</span>
+        <button class="next" aria-label="Next photograph" aria-controls="viewer-photo">→</button>
+      </div>
     </dialog>
   </body>
 </html>
